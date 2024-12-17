@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
+}
+
+.container {
+  margin-left: auto; /* This is to keep the container horizontally centered */
+  margin-right: auto; /* This is to keep the container horizontally centered */
+  min-height: 812px; /* This is to make sure no scrolls appear by default */
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-height: 1440px; 
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    min-height: 768px; 
+  }
+}
+
+.blog-card {
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  width: 340px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card-contents {
+  padding: 24px 16px;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.blog-card-image {
+  object-fit: cover;
+  height: 288px;
+  width: 100%;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.badge-success {
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.blog-title {
+  line-height: 28px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #171717;
+  -webkit-line-clamp: 2;
+}
+
+.blog-desc {
+  line-height: 24px;
+  font-weight: 500;
+  color: #525252;
+}
+
+.blog-card-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4338ca;
+  font-family: inherit;
+
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.blog-card-btn:focus,
+.blog-card-btn:hover {
+  color: #3730a3;
+}
+
+.blog-card-btn:disabled {
+  pointer-events: none;
+  color: #a3a3a3;
+}
+
+.blog-card-btn:focus {
+  box-shadow:
+    0px 0px 0px 1px #444ce7,
+    0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
+
